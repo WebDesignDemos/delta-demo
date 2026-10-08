@@ -1,0 +1,39 @@
+---
+// Utils
+import { getImage } from "astro:assets";
+
+// Components
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Hero from "@components/Hero/Hero.astro";
+import Solutions from "@components/Solutions/Solutions.astro";
+import Beneficios from "@components/Beneficios/Beneficios.astro";
+import Sobre from "@components/Sobre/Sobre.astro";
+import Servicos from "@components/Servicos/Servicos.astro";
+import ComoFunciona from "@components/ComoFunciona/ComoFunciona.astro";
+import Depoimentos from "@components/Depoimentos/Depoimentos.astro";
+import Segmentos from "@components/Segmentos/Segmentos.astro";
+import CTA from "@components/CTA/CTASimple.astro";
+import Formulario from "@components/Formulario/Formulario.astro";
+
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Banner (for rendering)
+import heroImage from "@assets/images/hero/hero.jpg";
+const optimizedHeroImage = await getImage({ src: heroImage, format: "webp" });
+
+
+//dados
+import { SITE } from "@data/client";
+---
+
+<BaseLayout title={SITE.title} description={SITE.description} heroImage={optimizedHeroImage}>
+	<Hero image={optimizedHeroImage} />
+	<Solutions />
+	<Beneficios />
+	<Sobre />
+	<Servicos />
+	<ComoFunciona />
+	<Depoimentos />
+	<CTA />
+	<Formulario />
+
+</BaseLayout>

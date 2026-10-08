@@ -1,0 +1,501 @@
+---
+// Utils
+
+---
+
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-2244">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-wrapper">
+                <span class="cs-topper">Depoimentos</span>
+                <h2 class="cs-title">O que nossos clientes dizem</h2>
+            </div>
+            <a aria-label="read more reviews" href="" class="cs-button-solid">Saiba Mais</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <img class="cs-image" loading="lazy" decoding="async" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-TpVFcWZ5CRYo_D2LceCAZtpwl9bpUM0IiCelBgH7w&s" alt="profile picture" width="64" height="64">
+                    </picture>
+                    <img class="cs-quote" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/quote-gold.svg" alt="quote" width="24" height="20">
+                </div>
+                <p class="cs-item-text">
+                    Um atendimento profissional, ágil e organizado, com uma solução adequada para as necessidades de manutenção da nossa estrutura.
+                </p>
+                <span class="cs-name">
+                    Diretor de Manutenção
+                    <span class="cs-desc">Felipe Macedo</span>
+                </span>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <img class="cs-image" loading="lazy" decoding="async" src="https://csimages2.nyc3.digitaloceanspaces.com/Reviews/profile5.jpg" alt="profile picture" width="64" height="64">
+                    </picture>
+                    <img class="cs-quote" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/quote-gold.svg" alt="quote" width="24" height="20">
+                </div>
+                <p class="cs-item-text">
+                    Serviço realizado com atenção às necessidades do ambiente e uma abordagem profissional durante todo o atendimento.
+                </p>
+                <span class="cs-name">
+                    Bruno Oliveira
+                    <span class="cs-desc">Gerente de Projetos</span>
+                </span>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <img class="cs-image" loading="lazy" decoding="async" src="https://media.licdn.com/dms/image/v2/D4D03AQEw4008_qZNbQ/profile-displayphoto-crop_800_800/B4DZyWN6QOJwAI-/0/1772046758154?e=1793232000&v=beta&t=rGLWqa_VxyYEMYhje-8nFFloR3plmfxaOZDsRueqOpQ" alt="profile picture" width="64" height="64">
+                    </picture>
+                    <img class="cs-quote" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/quote-gold.svg" alt="quote" width="24" height="20">
+                </div>
+                <p class="cs-item-text">
+                    Precisávamos de uma solução para nossa manutenção e encontramos um atendimento claro, organizado e adequado à nossa demanda.
+                </p>
+                <span class="cs-name">
+                    Bruna Silva
+                    <span class="cs-desc">Gerente</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<style lang="less">
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-2244 {
+    /* Centers the button */
+    text-align: center;
+    padding: var(--sectionPadding);
+    background-color: var(--backgroundAlt);
+  }
+  #reviews-2244 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6.5vw, 4rem);
+  }
+  #reviews-2244 .cs-content {
+    /* breaks the children elements out of the container, this allows the button to use the order property to send itself to the bottom of the .cs-container flexbox */
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  #reviews-2244 .cs-title {
+    margin-bottom: 0;
+  }
+  #reviews-2244 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #reviews-2244 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #reviews-2244 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #reviews-2244 .cs-button-solid {
+    /* places it at the bottom of the container in the 3rd position */
+    order: 3;
+  }
+  #reviews-2244 .cs-card-group {
+    width: 100%;
+    max-width: 59.625rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-2244 .cs-item {
+    border-radius: var(--cardBorder);
+    overflow: hidden;
+    background-color: var(--surfaceColor);
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    /* 32px - 60px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(2rem, 5vw, 3.75rem) clamp(1rem, 4vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2244 .cs-item:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-2244 .cs-image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-2244 .cs-picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2244 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #reviews-2244 .cs-quote {
+    width: 1.5rem;
+    height: auto;
+    margin-top: -0.5rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  #reviews-2244 .cs-item-text {
+    font-size: 1rem;
+    text-align: inherit;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-2244 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-2244 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-2244 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-2244 .cs-content {
+    display: flex;
+  }
+  #reviews-2244 .cs-card-group {
+    /* same value as the transform on the cs-item to offset its transform */
+    margin-top: 3.75rem;
+    flex-direction: row;
+  }
+  #reviews-2244 .cs-item:nth-of-type(2) {
+    transform: translateY(-3.75rem);
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #reviews-2244 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  #reviews-2244 .cs-content {
+    /* moves button to the left */
+    text-align: left;
+    width: 23%;
+    max-width: 18.625rem;
+    /* turn off the contents property, all children now live with the parent again */
+    align-items: flex-start;
+    flex: none;
+  }
+}
+
+
+
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-2244 {
+    /* Centers the button */
+    text-align: center;
+    padding: var(--sectionPadding);
+    background-color: #FBF5F1;
+  }
+  #reviews-2244 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6.5vw, 4rem);
+  }
+  #reviews-2244 .cs-content {
+    /* breaks the children elements out of the container, this allows the button to use the order property to send itself to the bottom of the .cs-container flexbox */
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  #reviews-2244 .cs-title {
+    margin-bottom: 0;
+  }
+  #reviews-2244 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #reviews-2244 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #reviews-2244 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #reviews-2244 .cs-button-solid {
+    /* places it at the bottom of the container in the 3rd position */
+    order: 3;
+  }
+  #reviews-2244 .cs-card-group {
+    width: 100%;
+    max-width: 59.625rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #reviews-2244 .cs-item {
+    border-radius: var(--imageRadius);
+    overflow: hidden;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    /* 32px - 60px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(2rem, 5vw, 3.75rem) clamp(1rem, 4vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2244 .cs-item:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-2244 .cs-image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-2244 .cs-picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2244 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #reviews-2244 .cs-quote {
+    width: 1.5rem;
+    height: auto;
+    margin-top: -0.5rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  #reviews-2244 .cs-item-text {
+    font-size: 1rem;
+    text-align: inherit;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-2244 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-2244 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-2244 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-2244 .cs-content {
+    display: flex;
+  }
+  #reviews-2244 .cs-card-group {
+    /* same value as the transform on the cs-item to offset its transform */
+    margin-top: 3.75rem;
+    flex-direction: row;
+  }
+  #reviews-2244 .cs-item:nth-of-type(2) {
+    transform: translateY(-3.75rem);
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #reviews-2244 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  #reviews-2244 .cs-content {
+    /* moves button to the left */
+    text-align: left;
+    width: 23%;
+    max-width: 18.625rem;
+    /* turn off the contents property, all children now live with the parent again */
+    align-items: flex-start;
+    flex: none;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-2244 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #reviews-2244 .cs-title,
+  body.dark-mode #reviews-2244 .cs-item-text,
+  body.dark-mode #reviews-2244 .cs-name,
+  body.dark-mode #reviews-2244 .cs-desc {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-2244 .cs-item:before {
+    background-color: #000;
+    opacity: 0.2;
+  }
+  body.dark-mode #reviews-2244 .cs-desc {
+    opacity: 0.8;
+  }
+}
+
+
+</style>
